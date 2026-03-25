@@ -1,0 +1,12 @@
+name: data-cleaning-env
+version: "0.1.0"
+description: "Real-world data cleaning environment with graded tasks (easy/medium/hard) for agent training."
+tags: [openenv, data-cleaning, tabular]
+entrypoint: server.app:app
+tasks:
+  - id: easy
+    summary: "Normalize text fields and fill missing categorical values"
+  - id: medium
+    summary: "Standardize dates, normalize currency, remove duplicates"
+  - id: hard
+    summary: "Multi-issue cleanup: dates, email validation, sentiment clipping, typo fixes"
